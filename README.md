@@ -1,73 +1,95 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Portal de Noticias "EL HOCICÓN"
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Este proyecto es una prueba práctica para el desarrollo de un Portal de Noticias llamado "EL HOCICÓN". Cada noticia en el portal incluye título, imagen principal (opcional), fecha de publicación, lugar, autor y contenido. El portal permite buscar, ordenar y clasificar las noticias publicadas.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## autor 
 
-## Description
+Cristhian Villca Mamani | Developer Backend
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Requisitos del Proyecto
 
-## Installation
+El desarrollo debe contener lo siguiente:
 
-```bash
-$ npm install
-```
+1. Desarrollar el CRUD (Create, Read, Update y Delete) para la gestión de contenido.
+2. Realizar las migraciones correspondientes para la base de datos.
+3. Cargar artículos de prueba en la base de datos mediante seeders.
+4. Realizar las interfaces para el CRUD.
 
-## Running the app
+## Tecnologías Utilizadas
 
-```bash
-# development
-$ npm run start
+### Versionamiento
 
-# watch mode
-$ npm run start:dev
+- Sistema de versionamiento Git: [Git](https://git-scm.com/)
 
-# production mode
-$ npm run start:prod
-```
+### Backend
 
-## Test
+- Node.js versión 20 o posterior: [Node.js](https://nodejs.org/)
+- Framework: NestJS versión 10: [NestJS](https://nestjs.com/)
+- ORM: TypeORM versión 0.3: [TypeORM](https://typeorm.io/)
+- Gestor de Base de Datos: PostgreSQL versión 16 o posterior: [PostgreSQL](https://www.postgresql.org/)
 
-```bash
-# unit tests
-$ npm run test
+### Frontend
 
-# e2e tests
-$ npm run test:e2e
+- Node.js versión 20: [Node.js](https://nodejs.org/)
+- Framework: NextJS versión 14: [NextJS](https://nextjs.org/)
+- CSS: MUI: [MUI](https://mui.com/)
 
-# test coverage
-$ npm run test:cov
-```
+### Opcionales
 
-## Support
+- Uso de Docker para el despliegue: [Docker](https://www.docker.com/)
+- CI/CD en GitLab: [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## Estructura del Proyecto
 
-## Stay in touch
+El proyecto está desarrollado en dos componentes: Frontend y Backend.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+### Repositorios
 
-## License
+Cada componente tiene su propio repositorio en [GitLab](https://gitlab.com). Los repositorios deben ser remitidos a través de correo electrónico a desarrollo.de.software.rrhh@gmail.com, proporcionando acceso con el rol de MAINTAINER al usuario desarrollo.de.software.rrhh para su revisión.
 
-Nest is [MIT licensed](LICENSE).
+En cada commit debe estar establecido el nombre y correo electrónico del postulante.
+
+### Documentación
+
+Cada repositorio debe contener:
+
+- `README.md` con la descripción del proyecto.
+- `INSTALL.md` con las instrucciones de instalación y despliegue.
+
+## Instalación y Despliegue
+
+1. Clonar el repositorio:
+    ```bash
+    git clone <URL_DEL_REPOSITORIO>
+    ```
+
+2. Instalar las dependencias:
+    ```bash
+    cd <NOMBRE_DEL_REPOSITORIO>
+    npm install
+    ```
+
+3. Configurar el archivo `.env` con las variables de entorno necesarias.
+
+4. Ejecutar las migraciones de la base de datos:
+    ```bash
+    npm run typeorm migration:run
+    ```
+
+5. Cargar los seeders en la base de datos:
+    ```bash
+    npm run seed
+    ```
+
+6. Iniciar la aplicación:
+    ```bash
+    npm run start
+    ```
+
+## Contribución
+
+Para contribuir a este proyecto, por favor envía un pull request o contacta al correo cristhianvillcamamani@gmail.com.
+
+---
+
+¡Gracias por tu interés en el proyecto "EL HOCICÓN"!
