@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  hocicon:
+    image: postgres:16-alpine
+    container_name: hocicon
+    environment:
+      POSTGRES_DB: hocicon
+      POSTGRES_USER: uHocicon
+      POSTGRES_PASSWORD: admin.123
+    volumes:
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 5432:5432
+
